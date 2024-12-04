@@ -14,7 +14,7 @@ class StringBuilder {
     this.#value = str.concat(this.#value);
   }
   padBoth(str) {
-    this.#value = str + this.#value + str;
+    this.#value = str.concat(this.#value).concat(str);
   }
 }
 
